@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+echo "Hello, Please wait while I transfer your logos and fix permissions for you this may take a moment"
+sleep 0.5s
+chmod 777 ./*.png && cp ./*.png /usr/share/lemonldap-ng/portal/htdocs/static/common/apps/
+echo -e
+sleep 0.5s
+echo "Permissions and file relocation completed successfully, Now to reload the Web Server"
+sleep 0.5s
+systemctl reload httpd
+echo "Web Server has been refreshed"
+sleep 0.2s
+echo "Have a nice day"
