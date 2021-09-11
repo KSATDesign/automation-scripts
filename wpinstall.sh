@@ -1,12 +1,4 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
-{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;\red53\green53\blue53;\red220\green161\blue13;}
-{\*\expandedcolortbl;;\cssrgb\c27059\c27059\c27059;\cssrgb\c89412\c68627\c3922;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\deftab560
-\pard\pardeftab560\slleading20\partightenfactor0
-
-\f0\fs24 \cf2 #!/usr/bin/env bash\
+#!/usr/bin/env bash\
 echo  "What is the web root Path of the virtual host? (ie /var/lib/nethserver/vhost/xxxxxxxxxxxxxxx/)"\
 \
 read -r location\
