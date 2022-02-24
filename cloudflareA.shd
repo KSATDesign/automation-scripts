@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+
+echo -e
+echo  "What is the name of the A record you wish to make?"
+echo -e
+read -r A
+
+echo -e
+echo  "What is IP address for $A?"
+echo -e
+read -r IP
+
+ 
+curl -X POST "https://api.cloudflare.com/client/v4/zones/4655861adabaffe9f0edae4b7884a174/dns_records/" \
+    -H "Authorization: Bearer efUXPgGa27xD2Vq78DWe0IHLNpzxG5yaE9ddxtaA" \
+    -H "Content-Type: application/json" \
+    --data '{"type":"'"$TYPE"'","name":"'"$A"'","content":"'"$IP"'","proxied":'"false"',"ttl":'"1"'}' \
+    | python -m json.tool;
+ CF_Account_ID=6d85c86f9a5d2ea21aea7b865be23c74
+CF_Token=efUXPgGa27xD2Vq78DWe0IHLNpzxG5yaE9ddxtaA
