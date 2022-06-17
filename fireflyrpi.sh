@@ -7,7 +7,6 @@ read -r timezone
 sleep 0.2s
 
 apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
-add-apt-repository 'deb [arch=amd64] http://mariadb.mirror.globo.tech/repo/10.9/debian bullseye main'
 
 wait
 
